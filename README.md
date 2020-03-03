@@ -13,16 +13,6 @@
 How can our company target travellers or marketing strategy to increase ticket sales to these upcoming cities and other interesting addons we can upsell to travellers . 
 Does the local governments need to invest in infrastructure to cater for tourists?
 
-### Iceland Tourism boom
-Tourism grew to one-third of Iceland’s economy in 2015, boosting the country’s dependency on the sector. But things are likely changing, and it’s unclear what comes next.
-— Isaac Carey
-
-
-The tourism boom that saved Iceland from economic crisis is slowing further, according to new tourism numbers released by the Icelandic Tourist Board. Fueled for nearly eight years by international travelers, the tourism industry may be reaching a breaking point, spelling an uncertain future for the Icelandic economy.
-
-In 2018, 2.3 million people visited Iceland, a 5.5 percent increase from the year before, according to data released this month. The Iceland-based media site Túristi first reported the news.
-
-On its own, the year-over-year increase sounds strong, but it points to a slowing trend. While the number of international visitors to Iceland grew by 39 percent in 2016, the increase in 2017 was 24 percent. That was the first time tourism growth slowed since the boom started in 2011.
 
 
 ## The Data
@@ -57,7 +47,7 @@ On its own, the year-over-year increase sounds strong, but it points to a slowin
 
 - By using different timeseries models such as ARMA, ARIMA, SARIMA, SARIMAX etc, checking seasonality and trends the model will be able to predict whether the current boom in popularity of certain tourist destinations are in the longrun beneficial for longterm business investments etc.
 
-- I am looking foward to apply what i have learnt in the past few weeks to make the best most of my final project.
+- I am looking foward to apply what i have learnt in the past few weeks to make the best most of my final project. 
 
 
 # EDA 
@@ -76,7 +66,44 @@ With a closer look at monthly volume, summer shows the greatest amount of travel
 </p>
 My main obsession was in looking at which destinations had the largest overall increases in visitors from 2010-2018.
 <p align="center">
-  <img width="900" height="500" src="https://github.com/jankomah/Travel_Trends_Project/blob/master/images/Screenshot%202020-03-02%20at%2023.12.47.png">
+  <img width="900" height="500" src="https://github.com/jankomah/Travel_Trends_Project/blob/master/images/dashboard%202020-03-02%20at%2023.12.47.png">
+</p>
+
+## Anomaly Analysis
+I performed anomaly analysis over the data for each city in an attempt to identify which cities saw unexpected increases or decreases in traveler volume. Using Facebook Prophet to model the trend at a 90% confidence interval, we see the shaded confidence interval around our actual data. The model’s assumption is that in the future we will see similar trend changes as the history, or in other words, the trend will continue at the same trajectory. Based on this assumption, we can identify points where the actual data reached a level that would be considered outside of the expected trend with 90% confidence, which I identified as anomalies. The analysis for Reykjavik, Iceland, can be seen below:
+<p align="center">
+  <img width="800" height="600" src="https://github.com/jankomah/Travel_Trends_Project/blob/master/images/iceland_anomalies.jpeg">
+</p>
+From the above graph, it's clear that there was a spike in tourists 2010-2012 that continued until it began to decrease in 2018. There was also a spike in activity in Winter 2017, which could warrant further investigation.
+
+
+### Iceland Tourism boom
+
+<p align="center">
+      <img width="800"height="600" src="https://github.com/jankomah/Travel_Trends_Project/blob/master/images/Screenshot%202020-03-02%20at%2023.29.05.png">
+</p>
+
+
+Tourism grew to one-third of Iceland’s economy in 2015, boosting the country’s dependency on the sector. But things are likely changing, and it’s unclear what comes next.
+— Isaac Carey
+
+
+The tourism boom that saved Iceland from economic crisis is slowing further, according to new tourism numbers released by the Icelandic Tourist Board. Fueled for nearly eight years by international travelers, the tourism industry may be reaching a breaking point, spelling an uncertain future for the Icelandic economy.
+
+In 2018, 2.3 million people visited Iceland, a 5.5 percent increase from the year before, according to data released this month. The Iceland-based media site Túristi first reported the news.
+
+On its own, the year-over-year increase sounds strong, but it points to a slowing trend. While the number of international visitors to Iceland grew by 39 percent in 2016, the increase in 2017 was 24 percent. That was the first time tourism growth slowed since the boom started in 2011.
+
+
+
+    
+# Forecasting
+- Finally, I attempted to forecast activity for the next three years. A SARIMA model offered the best results, with an rmse of 1,934,568
+compared to Facebook Prophet's rmse of 2,114,279. The SARIMA model utilized differencing of 1 (month) to stationarize the trend, and 12 (months=1 year) to stationarize the seasonality.
+
+Using my exogenous variables of temperature, precipitation, cost of living index, and population of a city did not improve my model, but rather completely threw off the predictions. While weather does fluctuate in accordance with seasonality, it does not affect the popularity of a destination, most likely due to the fact that vacations are planned based on expected weather rather than changes in weather. My thinking in including cost of living index as a predictor was that a decrease in the expense of a destination might trigger increased tourism, however this proved generally untrue. Population also appeared not to be predictive of flight passenger arrival activity, despite an increased population theoretically leading to an increase in travelers returning home to that destination.
+<p align="center">
+  <img width="800"height="600" src="https://github.com/jankomah/Travel_Trends_Project/blob/master/images/deletefuture_image.jpeg">
 </p>
 
 
