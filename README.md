@@ -2,6 +2,11 @@
 
 # World Tourism Trends & Forecasting
 
+<p align="center">
+  <img width="700" height="600" src="https://github.com/jankomah/Travel_Trends_Project/blob/master/images/Screenshot%202020-03-02%20at%2023.30.46.png">
+</p>
+
+
 ## The Question
 - Travelling appears to be increasing in popularity, and certain destinations seem to explode overnight. With global economic    factors , rising economies , increase in education which mostly leads to people finding well paid jobs worldwide , thereby increasing spending power across the globe and the increase in social media awareness.
 
@@ -47,7 +52,7 @@ Does the local governments need to invest in infrastructure to cater for tourist
 
 - By using different timeseries models such as ARMA, ARIMA, SARIMA, SARIMAX etc, checking seasonality and trends the model will be able to predict whether the current boom in popularity of certain tourist destinations are in the longrun beneficial for longterm business investments etc.
 
-- I am looking foward to apply what i have learnt in the past few weeks to make the best most of my final project. 
+- I am looking foward to apply what i have learnt in the past few weeks to make the best most of my final project.
 
 
 # EDA 
@@ -107,6 +112,13 @@ Using my exogenous variables of temperature, precipitation, cost of living index
 </p>
 
 
+
+## Implications & Future Studies
+Tourism is one of the largest economic drivers across the globe. By observing trends early on and identifying what is driving growth, economies can prepare for increased volume and businesses can know where to invest their capital as it relates to marketing, hotels, airlines, and all other facets of the tourism industry. 
+
+Moving forward, identifying what outside factors drive these trends would allow for much greater implications in regards to predicting economic growth due to tourism in these destinations. Without other predictive variables, this model will always be reacting to observed trends as opposed to predicting them. I would be interested to look at the relationship between social media activity related to a location and an increase in its popularity, particularly casual inference as it relates to content by "influencers" or celebrities.
+
+# Will this current boom continue in terms of growth with respect to the current news?
 
 
 
