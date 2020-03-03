@@ -1,6 +1,6 @@
-# Travel_Trends_Project
+# Travel_Trends_Project.
 
-# World Tourism Trends & Forecasting
+# World Tourism Trends & Forecasting.
 
 <p align="center">
   <img width="700" height="600" src="https://github.com/jankomah/Travel_Trends_Project/blob/master/images/Screenshot%202020-03-02%20at%2023.30.46.png">
@@ -113,12 +113,20 @@ Using my exogenous variables of temperature, precipitation, cost of living index
 
 
 
+# Conclusion:
 ## Implications & Future Studies
 Tourism is one of the largest economic drivers across the globe. By observing trends early on and identifying what is driving growth, economies can prepare for increased volume and businesses can know where to invest their capital as it relates to marketing, hotels, airlines, and all other facets of the tourism industry. 
 
 Moving forward, identifying what outside factors drive these trends would allow for much greater implications in regards to predicting economic growth due to tourism in these destinations. Without other predictive variables, this model will always be reacting to observed trends as opposed to predicting them. I would be interested to look at the relationship between social media activity related to a location and an increase in its popularity, particularly casual inference as it relates to content by "influencers" or celebrities.
 
 # Will this current boom continue in terms of growth with respect to the current news?
+<p align="center">
+  <img width="800"height="600" src="https://github.com/jankomah/Travel_Trends_Project/blob/master/images/Screenshot%202020-03-03%20at%2010.52.16.png">
+</p>   
+
+# Acknowlegdements:
+-
+
 
 
 
