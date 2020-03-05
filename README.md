@@ -20,26 +20,34 @@ Does the local governments need to invest in infrastructure to cater for tourist
 
 
 
-## The Data
+## The Data Collection Tools and sundry
 - Webscrapping using Visual Code Editor , 
 - Selenium , 
 - Beautiful Soup 
 - DB Browser(SQL) to store Data and 
-- MeteoStat weather API:
+- MeteoStat weather API
+- Worldometer (scrapy with VisualCodeStudio) :
+- Tableau
+- Plotly
 
 
 ## Data Collection 
+### U.S domestic flight data
 - transtats.bts.gov : https://www.transtats.bts.gov/DL_SelectFields.asp
 
+### International flight Data
 - ceicdata : - https://www.ceicdata.com/datapage/en/thailand/flight-and-passenger-statistics/international-flight-passenger-volume-arrival
 
+### Weather Data
 - Meteostat weather API : https://api.meteostat.net
 
+### Cost of living data
 - Cost of living index : https://www.numbeo.com/cost-of-living/rankings
 
+### World Population Data
 - Population Index : http://worldpopulationreview.com
 
-- 
+- https://www.worldometers.info/world-population/population-by-country/
 
 
 ## The Goal
@@ -125,7 +133,7 @@ Moving forward, identifying what outside factors drive these trends would allow 
 </p>   
 
 # Acknowlegdements:
--
+
 
 
 
